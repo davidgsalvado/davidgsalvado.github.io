@@ -1,7 +1,7 @@
 var btnno = document.getElementById('btnno');
 var btnyes = document.getElementById('btnyes');
 
-btnno.addEventListener('mouseenter', () => {
+document.getElementById('btnno').addEventListener('mouseenter', () => {
     console.log("mouse entrando");
     var pos = coordenadas();
     btnno.style.top = `${pos.posy}px`;
@@ -16,6 +16,6 @@ var coordenadas = () => {
     return { posx, posy }
 }
 
-btnyes.addEventListener('click', () => {
+document.getElementById('btnyes').addEventListener('click', () => {
     alert('Ya sabia que querias ser mi novio :)');
 });
